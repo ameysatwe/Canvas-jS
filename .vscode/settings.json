@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "p5-Coding",
+    "editor.formatOnSave": false,
+// Enable per-language
+    "[javascript]": {
+    "editor.formatOnSave": true
+    }   
+}

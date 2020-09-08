@@ -21,6 +21,7 @@ class Firework {
                 if (this.firework.vel.y >= 0) {
                     this.exploded = true;
                     this.explode();
+                    song.play();
                 }
             }
 

@@ -1,7 +1,11 @@
 var fireworks = [];
 var gravity;
-
+let song;
+function preload() {
+    song = loadSound('Fireworks Finale-SoundBible.com-370363529.wav');
+}
 function setup() {
+    //song.play();
     createCanvas(windowWidth, windowHeight);
     colorMode(HSB);
     gravity = createVector(0, 0.2);
@@ -11,6 +15,7 @@ function setup() {
 }
 
 function draw() {
+    //song.play();
     colorMode(RGB);
     background(0, 0, 0, 25);
 

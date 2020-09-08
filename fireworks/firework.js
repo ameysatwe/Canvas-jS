@@ -17,6 +17,7 @@ class Firework {
             if (!this.exploded) {
                 this.firework.applyForce(gravity);
                 this.firework.update();
+                //song.pause();
 
                 if (this.firework.vel.y >= 0) {
                     this.exploded = true;
@@ -31,6 +32,7 @@ class Firework {
 
                 if (this.particles[i].done()) {
                     this.particles.splice(i, 1);
+                    song.pause();
                 }
             }
         };

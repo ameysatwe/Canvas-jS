@@ -32,3 +32,13 @@ function draw() {
         }
     }
 }
+// let a = document.getElementById('p');
+// function changeText() {
+//     let x = document.getElementById('a');
+//     x.addEventListener('keyup', handle);
+// }
+// function handle(e) {
+//     a.innerHTML = '';
+//     a.innerHTML += e.target.value;
+// }
+// changeText();

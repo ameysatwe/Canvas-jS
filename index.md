@@ -6,3 +6,4 @@
 *   [Lorenz-Attractor](./lorentz-Attractor-p5)
 *   [fractal](./fractal)
 *   [fireworks](./fireworks)
+*   [steering](./evolutionary-steering)

@@ -42,7 +42,7 @@ class Vehicle {
         }
 
         // Method to update location
-        this.update = function () {
+        this.update = () => {
             this.health -= 0.005;
 
             // Update velocity
@@ -54,12 +54,12 @@ class Vehicle {
             this.acceleration.mult(0);
         };
 
-        this.applyForce = function (force) {
+        this.applyForce = (force) => {
             // We could add mass here if we want A = F / M
             this.acceleration.add(force);
         };
 
-        this.behaviors = function (good, bad) {
+        this.behaviors = (good, bad) => {
             var steerG = this.eat(good, 0.2, this.dna[2]);
             var steerB = this.eat(bad, -1, this.dna[3]);
 
@@ -70,7 +70,7 @@ class Vehicle {
             this.applyForce(steerB);
         };
 
-        this.clone = function () {
+        this.clone = () => {
             if (random(1) < 0.002) {
                 return new Vehicle(this.position.x, this.position.y, this.dna);
             } else {
@@ -78,7 +78,7 @@ class Vehicle {
             }
         };
 
-        this.eat = function (list, nutrition, perception) {
+        this.eat = (list, nutrition, perception) => {
             var record = Infinity;
             var closest = null;
             for (var i = list.length - 1; i >= 0; i--) {
@@ -105,7 +105,7 @@ class Vehicle {
 
         // A method that calculates a steering force towards a target
         // STEER = DESIRED MINUS VELOCITY
-        this.seek = function (target) {
+        this.seek = (target) => {
             var desired = p5.Vector.sub(target, this.position); // A vector pointing from the location to the target
 
             // Scale to maximum speed
@@ -119,11 +119,11 @@ class Vehicle {
             //this.applyForce(steer);
         };
 
-        this.dead = function () {
+        this.dead = () => {
             return this.health < 0;
         };
 
-        this.display = function () {
+        this.display = () => {
             // Draw a triangle rotated in the direction of velocity
             var angle = this.velocity.heading() + PI / 2;
 
@@ -159,7 +159,7 @@ class Vehicle {
             pop();
         };
 
-        this.boundaries = function () {
+        this.boundaries = () => {
             var d = 25;
 
             var desired = null;

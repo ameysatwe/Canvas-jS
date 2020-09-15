@@ -8,3 +8,4 @@
 *   [fireworks](./fireworks)
 *   [steering](./evolutionary-steering)
 *   [Gift Wrap](./Gift-Wrapper)
+*   [Phyllo](./phyllotaxis)

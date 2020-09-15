@@ -16,5 +16,5 @@ function draw() {
     fill((a - n) % 255, 255, 255);
     noStroke();
     ellipse(x, y, 6);
-    n++;
+    n += 10;
 }

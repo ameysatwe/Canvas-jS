@@ -7,7 +7,7 @@ function setup() {
     background(0);
 }
 function draw() {
-    var a = n * 137.6;
+    var a = n * 137.5;
     var r = c * sqrt(n);
 
     var x = r * cos(a) + width / 2;
@@ -15,6 +15,6 @@ function draw() {
 
     fill((a - n) % 255, 255, 255);
     noStroke();
-    ellipse(x, y, 4);
+    ellipse(x, y, 6);
     n++;
 }

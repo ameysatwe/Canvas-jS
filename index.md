@@ -9,3 +9,4 @@
 *   [steering](./evolutionary-steering)
 *   [Gift Wrap](./Gift-Wrapper)
 *   [Phyllo](./phyllotaxis)
+*   [Fractal-Spiro](./fractal-spirograph/index.html)

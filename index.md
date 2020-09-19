@@ -10,3 +10,4 @@
 *   [Gift Wrap](./Gift-Wrapper)
 *   [Phyllo](./phyllotaxis)
 *   [Fractal-Spiro](./fractal-spirograph/index.html)
+*   [SnowFlake](./SnowFlake/index.html)

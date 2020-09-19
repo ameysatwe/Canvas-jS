@@ -8,7 +8,7 @@ let xoff = 0;
 function setup() {
     createCanvas(800, 800);
     angleMode(DEGREES);
-    background(255);
+    background(127);
     saveButton = createButton('save');
     saveButton.mousePressed(saveSnowflake);
     clearButton = createButton('clear');

@@ -1,4 +1,4 @@
-let symmetry = 8;
+let symmetry = 12;
 let angle = 360 / symmetry;
 let saveButton;
 let clearButton;
